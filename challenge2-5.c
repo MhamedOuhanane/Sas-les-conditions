@@ -4,12 +4,13 @@ int main()
     int a , i;
     printf("Donner la valeur par annee : ");
     scanf("%d",&a);
-    printf("1-Mois\n");
-    printf("2-Jours\n");
-    printf("3-Heurs\n");
-    printf("4-Minutes\n");
-    printf("5-Secondes\n");
-    printf("Choiser ton chois dans le menu : ");
+    printf("---Menu---\n\n");
+    printf("1.Mois\n");
+    printf("2.Jours\n");
+    printf("3.Heurs\n");
+    printf("4.Minutes\n");
+    printf("5.Secondes\n\n\n");
+    printf("Votre choix ? \n\n ");
     scanf("%d",&i);
     switch (i)
     {

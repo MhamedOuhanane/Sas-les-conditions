@@ -2,35 +2,29 @@
 int main()
 {
     int a ,i;
-    printf("Saisir UN ANNNE : ");
+    printf("Donner la moyenne des notes d'eleve a = ");
     scanf("%d",&a);
-    print("Saisir ton chois : \n  \n 2 pour Jours \n 3 pour Heures \n 4 pour Minutes \n 5 pour Secondes  ");
-    printf("1 pour Mois\n");
-
-
-
-    
-    scanf("%d",&i);
-    switch (i)
+    if (a>=0 && a<10)
     {
-    case 1:
-        printf("%d an = %d Mois.\n ",a,a*12);
-        break;
-    case 2:
-        printf("%d an = %d Jours.\n ",a,a*365);
-        break;
-    case 3:
-        printf("%d an = %d Heurs.\n ",a,a*365*24);
-        break;
-    case 4:
-        printf("%d an = %d Minutes.\n ",a,a*365*24*60);
-        break;    
-    case 5:
-        printf("%d an = %d Secondes.\n ",a,a*365*24*60*60);
-        break;
-    default:
-        printf("Erreur...\n");
-        break;
+        printf("Mention Obtenue est recale.");
     }
+    else if (a>=10 && a<12)
+    {
+        printf("Mention Obtenue est passable. ");
+    }
+    else if (a>=12 && a<14)
+    {
+        printf("Mention Obtenue est  assez bien. ");
+    }    
+    else if (a>=14 && a<16)
+    {
+        printf("Mention Obtenue est bien. ");
+    }
+    else if (a>=16 && a<=20)
+    {
+        printf("Mention Obtenue est tres bien. ");
+    }
+    else
+        printf("La moyenne des notes donne est faux")    ;
     return 0;
 }
